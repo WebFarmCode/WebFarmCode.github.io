@@ -1,0 +1,270 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    font: 300 1em/1.5 "Open Sans Condensed", sans-serif;
+    color: #333;
+}
+
+p {
+    width: min-content;
+    min-width: -moz-fit-content;
+    font-size: 12px;
+    line-height: 15px;
+    margin: 20px 0 20px 0;
+    min-width: -webkit-fill-available;
+}
+
+h1 {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+ul
+{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.container {
+    width: 50%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+#product-box {
+    width: 45%;
+    overflow: hidden;
+    margin-top: 50px;
+    border: solid 0.2px #dbd8d8;
+    text-align: center;
+    min-height: 450px;
+    margin-left: 25%;
+    padding: 25px;
+    background-color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.box {
+    position: relative;
+    width: 90%;
+    left: 5%;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+.box .btn {
+    /*position: absolute;*/
+    transform: translate(0%, -110%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #555;
+    opacity: 0.9;
+    filter: alpha(opacity=70);
+}
+
+.box .btn:hover {
+    background-color: black;
+}
+
+.cart_btn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #555;
+    opacity: 0.9;
+    filter: alpha(opacity=70);
+    margin-top: 20px;
+}
+
+.cart_btn:hover {
+    background-color: black;
+    margin-top: 20px;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(50, 50, 50, 0.5);
+    display: none;
+}
+
+.popup__inner {
+    max-height: 100%;
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 40em;
+    margin: 5em auto 0;
+    padding-bottom: 1.5em;
+    border-radius: 2px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
+}
+
+.popup__header {
+    background-color: lightgray;
+    padding: 0.25em 0.75em;
+    margin-bottom: 2em;
+    text-align: right;
+}
+
+.popup__close {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.popup__close:hover {
+    background-color: #ff401e;
+}
+
+
+
+.cart__image {
+    width: 12em;
+    margin: 0 auto 2em;
+    background-color: #000;
+    display: block;
+}
+
+@media screen and (min-width: 30em) {
+    .cart__image {
+        display: inline-block;
+        margin: 0 3em 0 2em;
+    }
+}
+
+.cart__details {
+    margin: 0 2em 0 2em;
+    text-align: center;
+}
+
+@media screen and (min-width: 30em) {
+    .cart__details {
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+    }
+}
+
+form {
+    margin-top: 20px;
+}
+
+select {
+    width: 20em;
+    height: 30px;
+    padding: 5px;
+}
+.cart_stat__heading {
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 0.875em;
+    margin: 0 0 0.25em 0;
+    color: slategray;
+}
+
+.cart_stat__number {
+    font-size: 1.75em;
+    color: slategray;
+}
+
+.cart__name {
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.product_spec {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    margin-top: -25px;
+}
+
+.product_detail {
+    float: left;
+}
+
+.product_color {
+    float: right;
+    margin-right: 19px;
+}
+
+@media (max-width: 1171px) {
+    .product_color {
+        float: left;
+    }
+}
+
+@media (max-width: 470px) {
+    #product-box {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .box .btn {
+        padding: 0;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 367px) {
+    select {
+        width: 100%;
+    }
+    .popup__inner {
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 185px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 692px) {
+    .popup__inner {
+        overflow-y: scroll;
+        margin: auto;
+    }
+}
+
+
+}
